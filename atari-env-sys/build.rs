@@ -7,6 +7,7 @@ fn main() {
 
         #[cfg(feature = "sdl")]
         make.define("USE_SDL", "1");
+        make.define("CMAKE_POLICY_VERSION_MINIMUM", "3.5");
 
         make.build()
     };
